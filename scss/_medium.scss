@@ -1,0 +1,173 @@
+
+
+
+
+section{
+
+   
+
+    display: grid;
+    grid-template-columns: fit-content(60%) auto;
+ 
+   
+
+figure.main_photo{
+    height: 100%;
+   background-image: url("../img/an800png.png");
+   background-size: cover;
+   background-repeat: no-repeat;
+
+   
+   
+}
+div.name{
+display: flex;
+flex-direction: column;
+justify-content: flex-end;
+}
+
+h1{font-size: 5.75rem;
+   
+
+
+}
+h2{
+    font-size: 1.875rem;
+    
+   
+   
+}
+
+h4 {
+    padding:  8% 0;
+    font-size: 1.2em;
+}
+h3{
+    padding:8% 0;
+    font-size: 1.5em;
+}
+div.icon_box{
+  display:flex;
+  justify-content: space-around;
+  padding-top: 10%;
+  
+}
+
+
+div.icon_box2{
+display: none;
+}
+figure.icon_figure {
+    position: static;
+    text-align: center;
+    width: 200px;
+   
+    
+
+
+}
+div.icon_box figure.icon_figure {
+    width: 70px;
+    width: 70px;
+    
+}
+
+div.icon_box figure.icon_figure img{
+    margin-bottom: 30px;
+}
+
+div.icon_box:first-child {
+    width: 50px;
+    width: 50px;
+}
+
+#img_mail{
+    padding-top:20px;
+    padding-bottom: 10px;
+}
+div.icon_box figure.icon_figure h4,
+div.icon_box figure.icon_figure h3
+{
+    overflow: hidden;
+    width: 150px;
+    position: relative;
+    transition-delay: 0.33s;
+    color:transparent;
+  
+
+right:85%;
+
+}
+#mailing{
+    font-size: 1.15em;
+    padding: 12% 0;
+}
+
+div.icon_box figure.icon_figure h4:before,
+div.icon_box figure.icon_figure h3:before {
+content: "";
+position: absolute;
+top:0;
+left:100%;
+width: 100%;
+height:100%;
+background-color:black;
+transition: 1s;
+
+}
+div.icon_box figure.icon_figure img:hover~h3,
+div.icon_box figure.icon_figure img:hover~h4
+{
+    color:black;
+}
+
+
+div.icon_box figure.icon_figure h4:before{
+
+   left:initial;
+   right: 100%;
+   background-color:$primaryColor;
+   
+}
+
+div.icon_box figure.icon_figure img:hover~h3:before
+ {
+
+left:-100%;
+}
+div.icon_box figure.icon_figure img:hover~h4:before{
+     left:initial;
+     right: -100%;
+
+}
+
+#lok_icon img{
+width: 55%;
+
+}
+}
+article {
+
+
+
+display: grid;
+grid-template-columns:1fr 1fr;
+grid-row: 400px 400px 400px 400px;
+.auto {
+    grid-column: 1/span 2;
+    grid-row: 1;
+}
+.ex{
+      grid-column: 1/span 2;
+      grid-row: 2;
+}
+.ux{
+    grid-column: 1/span 2;
+    grid-row: 3;
+}
+
+
+
+
+
+}

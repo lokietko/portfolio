@@ -1,0 +1,485 @@
+/* line 1, scss/style.css */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+@font-face {
+  font-family: "Myfont";
+  src: local("Myfont"), url("../fonts/LeagueSpartan-Bold.otf"), format("otf");
+}
+
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+/* line 10, scss/style.css */
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+/*  apply a natural box layout model to all elements  */
+/* line 15, scss/style.css */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 20, scss/style.css */
+body {
+  font-family: "League Spartan", sans-serif;
+}
+
+/*---------NAV-------------------------*/
+/* line 24, scss/style.css */
+nav {
+  height: 100px;
+}
+
+/* line 26, scss/style.css */
+nav ul {
+  list-style-type: none;
+  text-align: end;
+}
+
+/*---------section-------------------------*/
+/* line 31, scss/style.css */
+section {
+  height: 700px;
+  /*------------------------CIRCLE---------------------------*/
+}
+
+/* line 34, scss/style.css */
+section h1 {
+  font-family: "Abril Fatface", cursive;
+  font-size: 1.875rem;
+  text-align: center;
+}
+
+/* line 38, scss/style.css */
+section h2 {
+  color: #cfb53b;
+  font-size: 1em;
+  text-align: center;
+}
+
+/* line 42, scss/style.css */
+section figure.main_photo {
+  height: 900px;
+  background-image: url("../img/main1_800.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/* line 47, scss/style.css */
+section div.icon_box {
+  display: none;
+}
+
+/* line 49, scss/style.css */
+section div.icon_box2 {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+/* line 53, scss/style.css */
+section div.icon_box2 figure.icon_figure {
+  width: 50px;
+  width: 50px;
+  background: rgba(207, 181, 59, 0.75);
+  border-radius: 50%;
+  text-align: center;
+}
+
+/* line 59, scss/style.css */
+section figure.icon_figure {
+  width: 50px;
+  width: 50px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+/* line 65, scss/style.css */
+section figure.icon_figure img {
+  width: 75%;
+  padding-top: 7%;
+}
+
+/* line 68, scss/style.css */
+section div.circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #cfb53b;
+  position: relative;
+  z-index: 1;
+}
+
+/* line 75, scss/style.css */
+section #cross {
+  background: white;
+  height: 30px;
+  position: relative;
+  width: 5px;
+  top: 9px;
+  left: 21px;
+  border: 0;
+}
+
+/* line 83, scss/style.css */
+section #cross:after {
+  background: white;
+  content: "";
+  height: 5px;
+  left: -12.5px;
+  position: absolute;
+  top: 11px;
+  width: 30px;
+}
+
+/* line 91, scss/style.css */
+section div.circle:hover {
+  transform: rotate(90deg);
+}
+
+/* line 94, scss/style.css */
+article {
+  color: white;
+  text-align: center;
+}
+
+/* line 97, scss/style.css */
+article .ex, article .auto, article .newslettery, article .delta, article .ux {
+  background-color: black;
+}
+
+/* line 99, scss/style.css */
+article h3 h2 {
+  padding: 4%;
+}
+
+/* line 101, scss/style.css */
+article .newslettery, article .ex {
+  background-color: #ededed;
+}
+
+/* line 103, scss/style.css */
+article .newslettery div, article .ex div {
+  color: black;
+}
+
+/* line 105, scss/style.css */
+article .newslettery figure img {
+  height: auto;
+  width: auto;
+}
+
+/* line 108, scss/style.css */
+article figure {
+  width: 100%;
+  height: auto;
+  padding-bottom: 5%;
+}
+
+/* line 112, scss/style.css */
+article figure img {
+  width: 100%;
+  background-size: cover;
+}
+
+/* line 116, scss/style.css */
+footer {
+  width: 100%;
+  text-align: right;
+}
+
+@media only screen and (min-width: 560px) {
+  /* line 121, scss/style.css */
+  section {
+    display: grid;
+    grid-template-columns: fit-content(60%) auto;
+  }
+  /* line 124, scss/style.css */
+  section figure.main_photo {
+    height: 100%;
+    background-image: url("../img/an800png.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  /* line 129, scss/style.css */
+  section div.name {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  /* line 133, scss/style.css */
+  section h1 {
+    font-size: 5.75rem;
+  }
+  /* line 135, scss/style.css */
+  section h2 {
+    font-size: 1.875rem;
+  }
+  /* line 137, scss/style.css */
+  section h4 {
+    padding: 8% 0;
+    font-size: 1.2em;
+  }
+  /* line 140, scss/style.css */
+  section h3 {
+    padding: 8% 0;
+    font-size: 1.5em;
+  }
+  /* line 143, scss/style.css */
+  section div.icon_box {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10%;
+  }
+  /* line 147, scss/style.css */
+  section div.icon_box2 {
+    display: none;
+  }
+  /* line 149, scss/style.css */
+  section figure.icon_figure {
+    position: static;
+    text-align: center;
+    width: 200px;
+  }
+  /* line 153, scss/style.css */
+  section div.icon_box figure.icon_figure {
+    width: 70px;
+    width: 70px;
+  }
+  /* line 156, scss/style.css */
+  section div.icon_box figure.icon_figure img {
+    margin-bottom: 30px;
+  }
+  /* line 158, scss/style.css */
+  section div.icon_box:first-child {
+    width: 50px;
+    width: 50px;
+  }
+  /* line 161, scss/style.css */
+  section #img_mail {
+    padding-top: 20px;
+    padding-bottom: 10px;
+  }
+  /* line 164, scss/style.css */
+  section div.icon_box figure.icon_figure h4,
+  section div.icon_box figure.icon_figure h3 {
+    overflow: hidden;
+    width: 150px;
+    position: relative;
+    transition-delay: 0.33s;
+    color: transparent;
+    right: 85%;
+  }
+  /* line 172, scss/style.css */
+  section #mailing {
+    font-size: 1.15em;
+    padding: 12% 0;
+  }
+  /* line 175, scss/style.css */
+  section div.icon_box figure.icon_figure h4:before,
+  section div.icon_box figure.icon_figure h3:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    transition: 1s;
+  }
+  /* line 185, scss/style.css */
+  section div.icon_box figure.icon_figure img:hover ~ h3,
+  section div.icon_box figure.icon_figure img:hover ~ h4 {
+    color: black;
+  }
+  /* line 188, scss/style.css */
+  section div.icon_box figure.icon_figure h4:before {
+    left: initial;
+    right: 100%;
+    background-color: #cfb53b;
+  }
+  /* line 192, scss/style.css */
+  section div.icon_box figure.icon_figure img:hover ~ h3:before {
+    left: -100%;
+  }
+  /* line 194, scss/style.css */
+  section div.icon_box figure.icon_figure img:hover ~ h4:before {
+    left: initial;
+    right: -100%;
+  }
+  /* line 197, scss/style.css */
+  section #lok_icon img {
+    width: 55%;
+  }
+  /* line 199, scss/style.css */
+  article {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row: 400px 400px 400px 400px;
+  }
+  /* line 203, scss/style.css */
+  article .auto {
+    grid-column: 1/span 2;
+    grid-row: 1;
+  }
+  /* line 206, scss/style.css */
+  article .ex {
+    grid-column: 1/span 2;
+    grid-row: 2;
+  }
+  /* line 209, scss/style.css */
+  article .ux {
+    grid-column: 1/span 2;
+    grid-row: 3;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  /* line 214, scss/style.css */
+  body {
+    display: grid;
+    grid-template-columns: 100px 95%;
+    grid-template-rows: 100vh  auto 300px;
+  }
+  /* line 218, scss/style.css */
+  body nav {
+    width: 100px;
+    height: auto;
+    border-right: 4px solid black;
+    grid-column: 1;
+  }
+  /* line 223, scss/style.css */
+  body nav li {
+    transform: rotate(90deg);
+    padding: 4em;
+  }
+  /* line 226, scss/style.css */
+  body nav::after {
+    content: "";
+    width: 1px;
+    height: 100%;
+    position: relative;
+    left: 117px;
+    border: 1px solid red;
+  }
+  /* line 233, scss/style.css */
+  body section {
+    z-index: -1;
+    grid-template-columns: 60% 40%;
+  }
+  /* line 236, scss/style.css */
+  body section .name {
+    padding-left: 10px;
+    height: 375px;
+  }
+  /* line 239, scss/style.css */
+  body section .icon_box {
+    height: 550px;
+  }
+  /* line 241, scss/style.css */
+  body section h1 {
+    font-size: 5.75rem;
+  }
+  /* line 243, scss/style.css */
+  body section h2 {
+    font-size: 1.875rem;
+    position: relative;
+    left: 25%;
+  }
+  /* line 247, scss/style.css */
+  body section figure.main_photo {
+    position: relative;
+    right: 20px;
+    background-size: cover;
+    background-position: top center;
+  }
+  /* line 252, scss/style.css */
+  body section div.icon_box figure.icon_figure {
+    width: 90px;
+    width: 90px;
+  }
+  /* line 255, scss/style.css */
+  body section div.icon_box:first-child {
+    width: 60px;
+    width: 60px;
+  }
+  /* line 258, scss/style.css */
+  body section div.icon_box figure.icon_figure h4,
+  body section div.icon_box figure.icon_figure h3 {
+    width: 250px;
+  }
+  /* line 261, scss/style.css */
+  body article {
+    grid-column: 1/span 2;
+    grid-row: 2;
+    grid-column-gap: 0.5%;
+    grid-row-gap: 0.5%;
+  }
+  /* line 266, scss/style.css */
+  body article p {
+    color: #cfb53b;
+    font-size: 1em;
+    text-decoration: underline;
+  }
+  /* line 270, scss/style.css */
+  body article .auto {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-row: auto;
+    height: 79vh;
+  }
+  /* line 275, scss/style.css */
+  body article .auto div {
+    grid-column: 2;
+    grid-row: 1;
+    align-self: center;
+  }
+  /* line 279, scss/style.css */
+  body article .auto div h3 {
+    font-size: 3em;
+  }
+  /* line 281, scss/style.css */
+  body article .auto div h2 {
+    font-size: 1.7em;
+  }
+  /* line 283, scss/style.css */
+  body article .auto figure {
+    align-self: center;
+    width: 100%;
+    grid-column: 1;
+    grid-row: 1;
+  }
+  /* line 288, scss/style.css */
+  body article .ex div h3 {
+    font-size: 3em;
+  }
+  /* line 290, scss/style.css */
+  body article .ex div h2 {
+    font-size: 1.7em;
+  }
+  /* line 292, scss/style.css */
+  body article .ex div, body article .newslettery div, body article .delta div, body article .ux div {
+    padding: 5%;
+    align-self: center;
+  }
+  /* line 295, scss/style.css */
+  body article h3 {
+    font-size: 2.2em;
+  }
+  /* line 297, scss/style.css */
+  body article h2 {
+    font-size: 1.3em;
+  }
+  /* line 299, scss/style.css */
+  body footer {
+    grid-column: 1/span 2;
+    grid-row: 3;
+    align-self: center;
+  }
+}

@@ -1,0 +1,182 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+/*  apply a natural box layout model to all elements  */
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body{
+     
+    font-family: $defaultFont;
+    
+}
+
+/*---------NAV-------------------------*/
+nav{
+    height: 100px;
+ul{
+    list-style-type: none;
+text-align: end;}
+
+
+
+}
+
+
+/*---------section-------------------------*/
+section{
+  
+    height: 700px;
+    
+
+    h1{
+        font-family: $hederFont;
+        font-size: 1.875rem;
+        text-align: center;
+    }
+    h2{
+    color:$primaryColor;
+    font-size: 1em;
+    text-align: center;
+    }
+
+figure.main_photo{
+   height:900px;
+    background-image: url("../img/main1_800.jpg");
+    background-size:contain;
+    background-repeat: no-repeat;
+}
+
+div.icon_box{
+display: none;
+}
+
+div.icon_box2 {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+ div.icon_box2 figure.icon_figure{
+    width: 50px;
+    width: 50px;
+    background: rgba(207,181,59,0.75);
+    border-radius: 50%;
+    text-align: center;
+    
+}
+ figure.icon_figure{
+    width: 50px;
+    width: 50px;
+    position: absolute;
+    bottom: 0;
+    left:0;
+    
+}
+figure.icon_figure img{
+    width: 75%;
+    padding-top: 7%;
+    
+  
+}
+
+
+
+
+
+
+/*------------------------CIRCLE---------------------------*/
+
+div.circle{
+  width: 50px;
+  height: 50px;
+border-radius: 50%;
+background-color:$primaryColor;
+position: relative;
+z-index: 1;
+}
+
+ #cross {
+     background: white;
+     height: 30px;
+     position: relative;
+     width: 5px;
+     top:9px;
+     left:21px;
+     border: 0;
+ }
+
+ #cross:after {
+     background: white;
+     content: "";
+     height: 5px;
+     left: -12.5px;
+     position: absolute;
+     top: 11px;
+     width: 30px;
+ }
+ //END CIRCLE
+
+div.circle:hover {
+    transform: rotate(90deg);
+}
+
+
+
+}
+
+article{
+
+.ex,.auto,.newslettery,.delta, .ux{
+    background-color: black;
+   
+}
+    
+color:white;
+
+
+text-align: center;
+
+
+h3 h2 {
+    
+    padding: 4%;
+}
+.newslettery, .ex{
+    background-color: #ededed;
+    div{
+        color: black;
+    }
+}
+.newslettery figure img{
+    height: auto;
+    width: auto;
+   
+}
+
+
+figure{
+    width: 100%;
+    height: auto;
+    padding-bottom: 5%;
+}
+figure img {
+width: 100%;
+background-size: cover;
+}
+}
+
+
+
+
+
+footer{
+    width: 100%;
+    text-align: right;
+}

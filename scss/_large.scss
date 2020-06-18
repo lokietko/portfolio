@@ -1,0 +1,170 @@
+
+ body{
+     display:grid ;
+
+grid-template-columns: 100px 95%;
+grid-template-rows: 100vh  auto 300px;
+
+nav{
+
+width: 100px;
+height: auto;
+border-right: $border;
+grid-column: 1;
+
+
+
+
+li{
+    transform: rotate(90deg);
+    padding:4em;
+}
+
+
+
+}
+
+nav::after {
+    content: "";
+    width: 1px;
+    height: 100%;
+    
+    position: relative;
+     left: 117px;
+    border: 1px solid red;
+}
+
+section{
+   
+z-index: -1;
+grid-template-columns: 60% 40%;
+
+.name{
+    padding-left: 10px;
+    height: 375px;
+}
+.icon_box{
+   height:550px;
+}
+
+h1 {
+    font-size: 5.75rem;
+
+
+
+}
+
+
+h2{
+
+font-size: 1.875rem;
+    position: relative;
+     left:25%;
+}
+
+figure.main_photo{
+   
+   
+ 
+     position: relative;
+     right: 20px;
+ 
+      background-size: cover;
+      background-position:  top center;
+
+}
+    
+div.icon_box figure.icon_figure {
+    width: 90px;
+    width: 90px;
+}
+
+div.icon_box:first-child{
+    width: 60px;
+    width: 60px;
+}
+
+div.icon_box figure.icon_figure h4,
+div.icon_box figure.icon_figure h3{
+    width: 250px;
+}
+}
+article{
+    grid-column: 1/span 2;
+    grid-row:2;
+    grid-column-gap: 0.5%;
+    grid-row-gap: 0.5%;
+p{
+    color:$primaryColor;
+    font-size: 1em;
+    text-decoration: underline;
+}
+    .auto{
+        
+        display: grid;
+        grid-template-columns: 60% 40%;
+grid-row: auto;
+
+height: 79vh;
+    div{
+
+    grid-column: 2;
+    grid-row: 1;
+    align-self: center;
+    h3{
+        font-size: 3em;
+    }
+   h2{
+       font-size: 1.7em;
+   }
+   
+    }
+    figure{
+        align-self: center;
+        width: 100%;
+        grid-column: 1;
+        grid-row: 1;
+        
+    }
+    }
+    .ex {
+      
+        div { 
+            
+         h3 {
+             font-size: 3em;
+         }
+
+         h2 {
+             font-size: 1.7em;
+         }}
+    }
+
+.ex div, .newslettery div, .delta div, .ux div{
+    padding: 5%;
+    align-self: center;
+}
+
+
+ h3 {
+     font-size: 2.2em;
+ }
+
+ h2 {
+     font-size: 1.3em;
+ }
+ 
+    
+
+   
+
+
+}
+
+footer{
+
+  grid-column: 1/span 2;
+    grid-row: 3;
+    align-self: center;
+}
+}
